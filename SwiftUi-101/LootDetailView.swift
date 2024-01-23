@@ -19,18 +19,13 @@ struct LootDetailView: View {
                 .font(.system(size: 100))
                 .cornerRadius(25)
                 .shadow(color: item.rarity.color, radius: 10, x: 0, y: 5)
-                .scaleEffect(showDetail ? 1.5 : 1.0)
-                .onAppear() {
-                    withAnimation(.smooth) {
-                        showDetail.toggle()
-                    }
-                }
 
 
             Text(item.name)
                 .font(.largeTitle)
                 .foregroundStyle(item.rarity.color)
                 .bold()
+
             Spacer().frame(height: 70)
             if item.rarity.rawValue == "unique" {
                 GeometryReader { geometry in
@@ -38,6 +33,12 @@ struct LootDetailView: View {
                         RoundedRectangle(cornerRadius: 15)
                             .foregroundColor(item.rarity.color)
                             .frame(width: geometry.size.width, height: 50)
+                            .scaleEffect(showDetail ? 1.0 : 0.8)
+                            .onAppear() {
+                                withAnimation(Animation.easeInOut(duration: 0.2).delay(0.4)) {
+                                    showDetail.toggle()
+                                }
+                            }
                         
                         Text("Item Unique 🏆")
                             .font(.title2)
