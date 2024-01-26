@@ -8,10 +8,16 @@
 import SwiftUI
 
 @main
-struct SwiftUi_101App: App {
+struct LootApp: App {
+    @State private var isOnboardingDone: Bool = false
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            if isOnboardingDone {
+                ContentView()
+            } else {
+                OnboardingView(isOnboardingDone: $isOnboardingDone)
+            }
         }
     }
 }

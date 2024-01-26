@@ -4,7 +4,6 @@
 //
 //  Created by Nathael MEUNIER on 19/01/2024.
 //
-
 import SwiftUI
 
 struct AddItemView: View {
