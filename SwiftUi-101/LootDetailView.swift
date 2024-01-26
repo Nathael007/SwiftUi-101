@@ -10,6 +10,7 @@ import SwiftUI
 struct LootDetailView: View {
     var item: LootItem
     @State private var showDetail: Bool = false
+    @State private var deleteItem = false
 
     var body: some View {
         VStack {
@@ -90,6 +91,22 @@ struct LootDetailView: View {
                 }
             }
         }
+        .toolbar(content: {
+            ToolbarItem(placement: ToolbarItemPlacement.automatic) {
+                Button(action: {
+                    deleteItem = true
+                }, label: {
+                    Image(systemName: "pencil")
+                })
+            }
+            ToolbarItem(placement: ToolbarItemPlacement.automatic) {
+                Button(action: {
+                    deleteItem = true
+                }, label: {
+                    Image(systemName: "trash")
+                })
+            }
+        })
     }
 }
 

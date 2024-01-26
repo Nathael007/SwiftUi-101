@@ -18,7 +18,7 @@ struct OnboardingView: View {
                 currentStep = 1
             })
 
-            OnboardingPageView(title: "Votre wishlist", description: "Créer une liste de souhaits pour garder une trace des articles que vous voulez acquérir.", imageName: "wand.and.stars.inverse", color: Color.purple, button: "Suivant", step: 1, totalSteps: 3, isLastStep: false, onNext: {
+            OnboardingPageView(title: "Votre wishlist", description: "Créer une liste de souhaits pour garder une trace des articles que vous voulez acquérir.", imageName: "wand.and.stars.inverse", color: Color.purple, button: "Suivant", step: 1, totalSteps: 2, isLastStep: false, onNext: {
                 currentStep = 2
             })
             
@@ -29,3 +29,4 @@ struct OnboardingView: View {
         .tabViewStyle(PageTabViewStyle(indexDisplayMode: .always))
     }
 }
+

@@ -20,6 +20,8 @@
 		91056C452B5FCB1C005ACD7D /* AddItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91056C442B5FCB1C005ACD7D /* AddItemView.swift */; };
 		91CDC73F2B63C40700207922 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91CDC73E2B63C40700207922 /* OnboardingView.swift */; };
 		91CDC7412B63C41200207922 /* OnboardingPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91CDC7402B63C41200207922 /* OnboardingPageView.swift */; };
+		91CDC7472B63E87700207922 /* WishListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91CDC7462B63E87700207922 /* WishListView.swift */; };
+		91CDC7492B63E88400207922 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91CDC7482B63E88400207922 /* ProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,8 @@
 		91056C442B5FCB1C005ACD7D /* AddItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemView.swift; sourceTree = "<group>"; };
 		91CDC73E2B63C40700207922 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		91CDC7402B63C41200207922 /* OnboardingPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPageView.swift; sourceTree = "<group>"; };
+		91CDC7462B63E87700207922 /* WishListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishListView.swift; sourceTree = "<group>"; };
+		91CDC7482B63E88400207922 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +115,8 @@
 				91CDC73E2B63C40700207922 /* OnboardingView.swift */,
 				91CDC7402B63C41200207922 /* OnboardingPageView.swift */,
 				91056C162B5FC56A005ACD7D /* ContentView.swift */,
+				91CDC7482B63E88400207922 /* ProfileView.swift */,
+				91CDC7462B63E87700207922 /* WishListView.swift */,
 				91056C402B5FCADF005ACD7D /* LootItem.swift */,
 				91056C422B5FCAFE005ACD7D /* Game.swift */,
 				91056C442B5FCB1C005ACD7D /* AddItemView.swift */,
@@ -277,6 +283,8 @@
 			files = (
 				91056C3F2B5FCAAD005ACD7D /* LootDetailView.swift in Sources */,
 				91056C452B5FCB1C005ACD7D /* AddItemView.swift in Sources */,
+				91CDC7492B63E88400207922 /* ProfileView.swift in Sources */,
+				91CDC7472B63E87700207922 /* WishListView.swift in Sources */,
 				91056C432B5FCAFE005ACD7D /* Game.swift in Sources */,
 				91056C172B5FC56A005ACD7D /* ContentView.swift in Sources */,
 				91056C412B5FCADF005ACD7D /* LootItem.swift in Sources */,

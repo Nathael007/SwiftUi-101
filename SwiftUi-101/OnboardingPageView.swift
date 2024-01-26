@@ -21,8 +21,10 @@ struct OnboardingPageView: View {
     var body: some View {
         VStack {
             Text(title)
-                .font(.title)
-                .padding()
+                .font(.system(size: 60))
+                .multilineTextAlignment(.center)
+                .fontWeight(.bold)
+                .padding(.horizontal)
             
             Circle()
                 .fill(color)
@@ -33,17 +35,23 @@ struct OnboardingPageView: View {
                         .aspectRatio(contentMode: .fit)
                         .frame(width: 150, height: 150)
                         .foregroundColor(.white)
-                        .padding(10)
+                        .padding(.horizontal)
                 )
 
             Text(description)
                 .font(.body)
                 .padding()
 
-            Button(button, action: onNext)
-                .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/)
-                .background(Color.blue)
+            Button(action: onNext) {
+                Text(button)
+                    .foregroundColor(.white)
+                    .fontWeight(.bold)
+                    .frame(width: 240, height: 50)
+                    .background(Color.blue)
+                    .cornerRadius(10)
+            }
         }
         .padding()
     }
 }
+
